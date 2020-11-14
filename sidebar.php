@@ -14,5 +14,4 @@ if ($its_me == '/citingvimeo/add_urls.php') {
 <div id="right_bar">
   <p><?php print $switch_blurb; ?></p>
   <p><a class="another" href="<?php print $switch_link; ?>">CLICK HERE!</a></p>
-
 </div>

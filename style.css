@@ -1,0 +1,149 @@
+/**************************************************
+ * YouTube Citation Tool
+ * A quick way to cite YouTube videos in APA format
+ * Created by Daniel Gurtner on August 1, 2018
+ * Learn more at danielgurtner.com
+**************************************************/
+
+* {
+  font-family: sans-serif;
+}
+body {
+  padding: 30px;
+}
+a {
+  text-decoration: none;
+}
+form {
+  margin-bottom: 50px;
+}
+#main,
+#right_bar {
+  float: left;
+  display: inline-block;
+}
+#main {
+  width: 60%;
+}
+#right_bar {
+  width: 35%;
+  /*padding-left: 2%;*/
+  padding-top: 20px;
+}
+.clear_fix {
+  display: block;
+  float: none;
+  clear: both;
+  width: 100%;
+}
+.urls,
+#youtube_link_list {
+  width: 90%;
+  padding: 7px 30px 8px 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+.urls:hover,
+.urls:focus,
+.urls:active,
+#youtube_link_list:hover,
+#youtube_link_list:focus,
+#youtube_link_list:active {
+  border-color: #777;
+}
+.urls.how_many {
+  width: 30px;
+}
+input[type='submit'],
+a.another,
+a.goto {
+  padding: 7px 20px 8px;
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 2px solid #999;
+  background-color: #f0f0f0;
+  color: #0f0f0f;
+}
+a.goto {
+  padding: 0px 20px 5px;
+  display: inline-block;
+}
+input[type='submit']:hover,
+a.another:hover,
+a.goto:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.vimeo,
+.youtube {
+  /*margin-top: 80px;*/
+  /*margin-bottom: 80px;*/
+}
+.vimeo .goto,
+.youtube .goto {
+  top: 0;
+}
+.vimeo .goto span,
+.youtube .goto span {
+  font-size: 1.8em;
+  position: relative;
+  top: 2px;
+}
+.vimeo .goto span {
+  padding: 0 0 0 5px;
+}
+.youtube .goto span {
+  padding: 0 5px 0 0;
+}
+.thor {
+  font-size: 10px;
+  padding: 30px 0 10px;
+}
+#helloworld {
+  padding: 20px 0 50px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#self_destruct {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* responsive stuff */
+@media only screen and (max-width: 768px) {
+  
+  body {
+    /*background-color: #f1f1f1;*/
+  }
+  #main,
+  #right_bar {
+    float: none;
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+  .urls,
+  #youtube_link_list {
+    /* width: 100%; */
+  }
+  .clear_fix {
+    display: none;
+  }
+
+}
+
+/* for testing purposes only */
+.test {
+  color: transparent;
+  position: relative;
+  top: 100px;
+  display: none;
+}
+

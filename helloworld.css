@@ -1,0 +1,30 @@
+/* hello world */
+#helloworld {
+  display: block;
+  width: 80%;
+  vertical-align: middle;
+  background-color: #f0f0f0;
+  border-top: 1px solid #e9e9e9;
+  padding: 15px;
+  /*visibility: hidden;*/
+  /*position: sticky;*/
+  /*top: 90vh;*/
+  /*margin-top: 200px;*/
+  position: fixed;
+  bottom: 0;
+  font-size: 10px;
+}
+#helloworld a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+#helloworld a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+#some_padding {
+  height: 100px;
+  width: 100%;
+  display: block;
+}

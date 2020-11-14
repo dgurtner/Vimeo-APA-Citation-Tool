@@ -3,12 +3,12 @@
 <head>
 
   <title>Paste a List - Citing Vimeo Videos</title>
-  <link rel="stylesheet" type="text/css" href="../citingyoutube/style.css?<?php require_once('reqd_force_reload_assets.php') ?>" />
+  <link rel="stylesheet" type="text/css" href="style.css?<?php require_once('reqd_force_reload_assets.php') ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../citingyoutube/numpy.css?<?php require_once('reqd_force_reload_assets.php') ?>" />
+  <link rel="stylesheet" type="text/css" href="numpy.css?<?php require_once('reqd_force_reload_assets.php') ?>" />
   <style type="text/css" id="switch"></style>
   
-  <script type="text/javascript" src="../citingyoutube/numpy.js"></script>
+  <script type="text/javascript" src="numpy.js"></script>
 
 </head>
 <body id="rapper">
@@ -19,12 +19,11 @@
 $sent_me_links = $_POST['vimeo_link_list'];
 $links_to_array = explode("\r\n", $sent_me_links);
 
-print '<!-- 
-
- ';
-print_r($links_to_array);
-print ' 
- -->';
+// print '<!-- 
+ // ';
+// print_r($links_to_array);
+// print ' 
+ // -->';
 
 $current_date = date("F j, Y");
 
@@ -83,7 +82,8 @@ require_once "sidebar.php";
 ?>
   <div class="clear_fix"></div>
   
-  <?php require_once('../citingyoutube/helloworld.php'); ?>
+  <?php require_once('helloworld.php'); ?>
+  <div id="self_destruct"><!-- // halloween prank?  --> <?php require_once('numpy.php'); ?></div>
 </body>
 </html>
 

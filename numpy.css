@@ -1,0 +1,74 @@
+/* numpy */
+#numpy p {
+  color: lime !important; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40em;
+}
+#numpy p:nth-child(1) {
+  animation: type1 4s steps(60, end);
+  -webkit-animation: type1 4s steps(60, end);
+}
+#numpy p:nth-child(2) {
+  animation: type2 8s steps(60, end);
+  -webkit-animation: type2 8s steps(60, end);
+}
+#numpy p:nth-child(3) {
+  animation: type3 12s steps(60, end);
+  -webkit-animation: type3 12s steps(60, end);
+}
+#numpy p:nth-child(4) {
+  animation: type4 16s steps(60, end);
+  -webkit-animation: type4 16s steps(60, end);
+}
+#numpy p a {
+  color: lime !important;
+  text-decoration: none;
+}
+#numpy span {
+  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+}
+@keyframes type1 { 
+  0%{width: 0;}
+  50%{width: 70;}
+  100%{ width: 100; } 
+} 
+@keyframes type2 {
+  0%{width: 0;}
+  40%{width: 0;}
+  100%{ width: 100; } 
+} 
+@keyframes type3 {
+  0%{width: 0;}
+  70%{width: 0;}
+  100%{ width: 100; } 
+} 
+@keyframes type4 {
+  0%{width: 0;}
+  70%{width: 0;}
+  100%{ width: 100; } 
+} 
+@keyframes blink {
+  to{opacity: .0;}
+}
+#numpy::selection {
+  background: black !important;
+}
+.admin {
+  color: #777;
+  font-size: .6em;
+}
+ 
+/* won't show on small screens in landscape anyway */
+@media only screen and (max-width: 660px) {
+  #rapper {
+    padding: 3% !important;
+  }
+  #rapper #numpy p {
+    font-size: 14px !important;
+  }
+}
